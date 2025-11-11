@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobiliza Já | Aluguel e Doação de Equipamentos de Acessibilidade</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top shadow-sm">
+
+    <div class="container">
+
+        <a class="navbar-brand text-primary fw-bold" href="#">
+            <i class="bi bi-person-wheelchair me-2"></i>Mobiliza Já
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+
+                <li class="nav-item"><a class="nav-link" href="#">Aluguel</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Doação</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Como Funciona</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Contato</a></li>
+
+
+                <li class="nav-item ms-lg-3">
+                    <a class="btn btn-outline-primary me-2" href="#">Doar</a>
+                    <a class="btn btn-primary" href="#"><i class="bi bi-cart me-1"></i> Quero Alugar </a>
+
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+    <!--define cor primaria e padding no botão (bootstrap)-->
+    <header class="bg-primary bg-opacity-10 py-5">
+        <div class="container">
+            <div class="row align-items-center">
+
+                <div class="col-md-7 mb-4 mb-md-0">
+                    <h1 class="display-4 fw-bolder text-dark">Recupere a sua Liberdade. <br> Simplifique a sua Rotina.
+                    </h1>
+
+                    <p class="lead text-muted my-4"> Encontre cadeiras de rodas, andadores, camas hospitalares e mais,
+                        para alugar ou receber doação. <br> **Baixo Custo e Entraga Rápida!**</p>
+
+                    <form class="d-flex" role="search">
+                        <input class="form-control form-control-lg me-2" type="search"
+                            placeholder="Buscar equipamento (ex: Cadeira de Rodas)" aria-label="Search">
+                        <button class="btn btn-primary btn-lg" type="submit">Buscar</button>
+                    </form>
+                </div>
+                
+                <div class="col-md-5 text-center">
+                    <img src="" class="img-fluid" alt="Pessoa utilizando equimanto"> 
+                </div>
+
+            </div>
+        </div>
+    </header>
+    
+
+    <!--cards de serviços py-5 bg-white - padding e fundo branco-->
+
+    <section class="py-5 bg-white">
+    <div class="container">
+        <h2 class="text-center mb-5 fw-bold"> Como podemos Ajudar Você?</h2>
+
+        <div class="row g-4">
+            <div class="col-md-6">
+                <div class="card p-4 shadow-sm h-100 border-0 bg-light">
+                    <div class="card-body">
+                        <h3 class="card-title text-primary">Aluguel Rápido</h3>
+
+                        <div class="mb-3">
+                            <span class="badge bg-primary me-2">Cadeiras de Rodas</span>
+                            <span class="badge bg-primary me-2">Andadores</span>
+                            <span class="badge bg-primary">Cadeiras de Banho</span>
+                        </div>
+                        <a href="#" class="btn btn-primary btn-sm mt-3">Ver Equipamentos para Aluguel</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card p-4 shadow h-100 border-0">
+                    <div class="card-body">
+                        <h3 class="card-title text-success">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                                class="bi bi-heart-fill me-2" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314" />
+                            </svg>
+                            Faça uma Doação
+                        </h3>
+                        <p class="card-text">Seu equipamento parado pode mudar a vida de alguém. Conectamos você a
+                            quem precisa de forma transparente e segura.</p>
+                        <div class="text-center my-4">
+                            <h4 class="text-dark fw-bold">128 Vidas Transformadas
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                    class="bi bi-star-fill text-warning" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.612 15.424 5.378 9.771 0 6.353l6.5-.544L12 1 8.614 6.353l6.5.544-5.378 3.653z" />
+                                </svg>
+                            </h4>
+                        </div>
+                        <a href="#" class="btn btn-success btn-sm mt-3">Detalhes e Formulário de Doação</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--(produtos)-->
+
+<section class="py-5 bg-light">
+    <div class="container">
+
+        <h2 class="text-center mb-5 fw-bold">Equipamentos em Destaque</h2>
+
+        <!-- Cria a navegação em formato de "Abas" para alternar -->
+        <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="pills-alugados-tab" data-bs-toggle="pill"
+                    data-bs-target="#pills-alugados" type="button" role="tab" aria-controls="pills-alugados" aria-selected="true">
+                    Mais Alugados
+                </button>
+            </li>
+
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-doacao-tab" data-bs-toggle="pill" data-bs-target="#pills-doacao"
+                    type="button" role="tab" aria-controls="pills-doacao" aria-selected="false">
+                    Novos Itens para Doação
+                </button>
+            </li>
+        </ul>
+
+        <!-- Conteúdo das abas -->
+        <div class="tab-content" id="pills-tabContent">
+
+            
+            <div class="tab-pane fade show active" id="pills-alugados" role="tabpanel" aria-labelledby="pills-alugados-tab">
+
+                 
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+
+                    <!-- Card 1 -->
+                    <div class="col">
+                        <div class="card h-100 shadow-sm border-0">
+                            <img src="https://placehold.co/400x300/38bdf8/ffffff?text=Cadeira" class="card-img-top" alt="Cadeira de Rodas">
+
+                            <div class="card-body">
+                                <h5 class="card-title">Cadeira de Rodas (marca)</h5>
+                                <p class="card-text text-primary fw-bold">A partir de R$ 359,00 / Por mês</p>
+                                <a href="#" class="btn btn-sm btn-outline-primary">Ver Detalhes</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="col">
+                        <div class="card h-100 shadow-sm border-0">
+                            <img src="https://placehold.co/400x300/a3e635/1a202c?text=Andador" class="card-img-top" alt="Andador com Rodas">
+                            <div class="card-body">
+                                <h5 class="card-title">Andador Articulado</h5>
+                                <p class="card-text text-primary fw-bold">A partir de R$ 60,00 / Mês</p>
+                                <a href="#" class="btn btn-sm btn-outline-primary">Ver Detalhes</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="col">
+                        <div class="card h-100 shadow-sm border-0">
+                            <img src="https://placehold.co/400x300/fbbf24/1a202c?text=Cama" class="card-img-top"
+                                alt="Cama Hospitalar Elétrica">
+                            <div class="card-body">
+                                <h5 class="card-title">Cama Hospitalar Elétrica</h5>
+                                <p class="card-text text-primary fw-bold">A partir de R$ 450,00 / Mês</p>
+                                <a href="#" class="btn btn-sm btn-outline-primary">Ver Detalhes</a>
+                            </div>
+                        </div>
+                    </div>
+                
+                </div> 
+
+            </div> 
+
+            
+            <div class="tab-pane fade" id="pills-doacao" role="tabpanel" aria-labelledby="pills-doacao-tab">
+                <p class="text-center text-muted p-5">Nenhum item de doação cadastrado hoje. Seja o primeiro a doar!</p>
+            </div> 
+
+        </div> 
+
+    </div>
+</section>
+
+<!-- Fale conosco / painel de dúvidas-->
+
+<section class="bg-primary text-white py-5">
+    <div class="container text-center">
+        <h2 class="fw-bold mb-3">Tem Dúvidas? Fale Conosco!</h2>
+        <p class="lead mb-4">Nossa equipe está pronta para te ajudar a encontrar o equipamento ideal para você.</p>
+        <a href="https://api.whatsapp.com/send?phone=SEU_NUMERO" class="btn btn-lg btn-light text-primary shadow">
+            <i class="bi bi-whatsapp me-2"></i> Chamar no WhatsApp
+        </a>
+    </div>
+</section>
+
+<footer class="bg-dark text-white-50 py-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 mb-3">
+                <h5 class="text-white">Mobiliza Já</h5>
+                <p>Sua plataforma de mobilidade e solidariedade. <br>&copy; 2025 Todos os direitos reservados aos Alunos que fizeram o TCC IOS.</p>
+            </div>
+            <div class="col-md-4 mb-3">
+                <h5 class="text-white">Links Úteis</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-white-50 text-decoration-none">Quem Somos</a></li>
+                    <li><a href="#" class="text-white-50 text-decoration-none">Termos de Uso</a></li>
+                    <li><a href="#" class="text-white-50 text-decoration-none">Política de Privacidade</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4 mb-3">
+                <h5 class="text-white">Siga-nos</h5>
+                <a href="#" class="text-white me-3 fs-5"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="text-white me-3 fs-5"><i class="bi bi-instagram"></i></a>
+                <a href="#" class="text-white fs-5"><i class="bi bi-twitter"></i></a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

@@ -12627,9 +12627,24 @@ fieldset:disabled .btn {
   border-color: #0d6efd;
 }
 
-.navbar{
-    min-height: 80px;
-}
-.navbar.bg-light{
-    background-color: rgba(248, 249, 250, 0.9) !important;
-}
+/* CSS para as miniaturas (thumbnails) da galeria */
+        .thumbnail {
+            width: 80px;
+            /* Tamanho da miniatura */
+            height: 80px;
+            object-fit: contain;
+            /* Ajusta a imagem sem distorcer, mantendo proporções */
+            border: 2px solid transparent;
+            cursor: pointer;
+            transition: border-color 0.2s ease-in-out;
+            padding: 5px;
+            /* Espaçamento interno para a borda não cortar a imagem */
+            background-color: #fff;
+            /* Fundo branco para imagens PNG com transparência */
+        }
+
+        .thumbnail:hover,
+        .thumbnail.active {
+            border-color: #0d6efd;
+            /* Cor primária do Bootstrap (borda azul) */
+        }
